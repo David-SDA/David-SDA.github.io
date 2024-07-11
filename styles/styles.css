@@ -62,7 +62,27 @@ section {
   transform: translateY(0) scale(1);
 }
 
-.controlls {
+.sec1 {
+  background-color: chartreuse;
+}
+
+.sec2 {
+  background-color: slateblue;
+}
+
+.sec3 {
+  background-color: aqua;
+}
+
+.sec4 {
+  background-color: chocolate;
+}
+
+.sec5 {
+  background-color: darkcyan;
+}
+
+.controls {
   position: fixed;
   z-index: 10;
   top: 5%;
@@ -72,14 +92,14 @@ section {
   align-items: center;
   transform: translateY(-50%);
 }
-.controlls .active-btn {
+.controls .active-btn {
   background-color: var(--color-secondary) !important;
   transition: all 0.4s ease-in-out;
 }
-.controlls .active-btn i {
+.controls .active-btn i {
   color: var(--color-white) !important;
 }
-.controlls .control {
+.controls .control {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-grey-4);
@@ -92,7 +112,7 @@ section {
   margin: 0 1rem;
   box-shadow: var(--box-shadow-1);
 }
-.controlls .control i {
+.controls .control i {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;

@@ -62,7 +62,26 @@ section{
     transform: translateY(0) scale(1);
 }
 
-.controlls{
+.sec1{
+    background-color: chartreuse;
+}
+.sec2{
+    background-color: slateblue;
+}
+
+.sec3{
+    background-color: aqua;
+}
+
+.sec4{
+    background-color: chocolate;
+}
+
+.sec5{
+    background-color: darkcyan;
+}
+
+.controls{
     position: fixed;
     z-index: 10;
     top: 5%;

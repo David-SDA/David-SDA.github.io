@@ -1,17 +1,28 @@
-const sections = document.querySelectorAll("section");
-const sectionButtons = document.querySelectorAll(".controlls");
-const sectionButton = document.querySelectorAll(".control");
-const allSections = document.querySelectorAll(".main-container");
+const sections = document.querySelectorAll(".section");
+const sectionButtons = document.querySelectorAll(".control");
+const allSections = document.querySelector(".main-container");
 
 // Transitions between pages
-function pageTransitions(){
-    // Button click that activates the section
-    for(let i = 0; i < sectionButton.length; i++){
-        sectionButton[i].addEventListener("click", function(){
-            let currentButton = document.querySelectorAll(".active-btn");
-            currentButton[0].className = currentButton[0].className.replace("active-btn", "");
-            this.className += " active-btn";
-        })
+function pageTransitions() {
+    // Button click that activates the buttons
+    for(let i = 0; i < sectionButtons.length; i++){
+        sectionButtons[i].addEventListener("click", function (){
+            let currentButton = document.querySelector(".active-btn");
+            currentButton.classList.remove("active-btn");
+            this.classList.add("active-btn");
+
+            // Sections that will be active
+            const id = this.dataset.id;
+            if(id){
+                // Remove active class from other sections
+                sections.forEach((section) => {
+                    section.classList.remove("active");
+                });
+                // Add active class to the current section
+                const element = document.getElementById(id);
+                element.classList.add("active");
+            }
+        });
     }
 }
 
