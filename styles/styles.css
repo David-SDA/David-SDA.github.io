@@ -82,6 +82,10 @@ section {
   background-color: darkcyan;
 }
 
+.active {
+  display: block;
+}
+
 .controls {
   position: fixed;
   z-index: 10;
