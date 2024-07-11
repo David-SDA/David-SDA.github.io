@@ -7,10 +7,10 @@
 
 :root{
     --color-primary: #191d2b;
-    --color-secondary: #27AE60;
+    --color-secondary: #ff1801;
     --color-white: #FFFFFF;
     --color-black: #000;
-    --color-grey0: #f8f8f8;
+    --color-grey-0: #f8f8f8;
     --color-grey-1: #dbe1e8;
     --color-grey-2: #b2becd;
     --color-grey-3: #6c7983;
@@ -71,6 +71,15 @@ section{
     justify-content: center;
     align-items: center;
     transform: translateY(-50%);
+
+    .active-btn{
+        background-color: var(--color-secondary) !important;
+        transition: all .4s ease-in-out;
+
+        i{
+            color: var(--color-white) !important;
+        }
+    }
 
     .control{
         padding: 1rem;
