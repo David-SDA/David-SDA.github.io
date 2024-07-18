@@ -1,4 +1,90 @@
 @media screen and (max-width: 600px){
+    .about-container{
+        grid-template-columns: 1fr;
+        
+        .right-about{
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+
+        .left-about{
+            padding-right: 0;
+
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .timeline{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .projects{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .section{
+        padding: 2rem 2rem;
+    }
+
+    .main-title{
+        h2{
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1432px){
+    header{
+        padding: 0 !important;
+    }
+
+    .section{
+        padding: 7rem 11rem;
+    }
+
+    .contact-content-con{
+        flex-direction: column;
+
+        .right-contact{
+            margin: 2.5rem 0 4rem 0;
+        }
+    }
+
+    .contact-content-con .right-contact .i-c-2{
+        flex-direction: column;
+    }
+
+    .contact-content-con .right-contact .i-c-2 :last-child{
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .about-container{
+        grid-template-columns: 1fr;
+
+        .right-about{
+            padding-top: 2.5rem;
+        }
+    }
+
+    .projects{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-title{
+        h2{
+            font-size: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 970px){
     header{
         padding: 0;
         height: max-content;
@@ -42,58 +128,8 @@
         height: 85%;
     }
 
-    .about-container{
-        grid-template-columns: 1fr;
-        
-        .right-about{
-            grid-template-columns: 1fr;
-            padding-top: 2.5rem;
-        }
-
-        .left-about{
-            padding-right: 0;
-
-            p{
-                padding-left: 0;
-            }
-        }
-    }
-
-    .timeline{
-        grid-template-columns: 1fr;
-        padding-bottom: 6rem;
-    }
-
-    .projects{
-        grid-template-columns: 1fr;
-        padding-bottom: 6rem;
-    }
-
-    .contact-content-con{
-        flex-direction: column;
-
-        .right-contact{
-            margin: 2.5rem 0 4rem 0;
-        }
-    }
-
-    .contact-content-con .right-contact .i-c-2{
-        flex-direction: column;
-    }
-
-    .contact-content-con .right-contact .i-c-2 :last-child{
-        margin-left: 0;
-        margin-top: 1.5rem;
-    }
-
     .section{
-        padding: 2rem 2rem;
-    }
-
-    .main-title{
-        h2{
-            font-size: 2rem;
-        }
+        padding: 7rem 4rem;
     }
 
     .controls{
@@ -107,7 +143,19 @@
         background-color: var(--color-grey-5);
         
         .control{
-            margin: 1rem 0.3rem;
+            margin: .6rem 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+    .section{
+        padding: 7rem 3rem;
+    }
+
+    .main-title{
+        h2{
+            font-size: 3rem;
         }
     }
 }
