@@ -11,6 +11,8 @@
     .theme-btn{
         width: 50px;
         height: 50px;
+        top: 3%;
+        right: 2%;
     }
 
     .header-content{
@@ -38,6 +40,32 @@
         margin: 0 auto;
         width: 90%;
         height: 85%;
+    }
+
+    .about-container{
+        grid-template-columns: 1fr;
+        
+        .right-about{
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+
+        .left-about{
+            padding-right: 0;
+
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .timeline{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .section{
+        padding: 2rem 2.5rem;
     }
 
     .controls{
