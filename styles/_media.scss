@@ -1,42 +1,3 @@
-@media screen and (max-width: 600px){
-    .about-container{
-        grid-template-columns: 1fr;
-        
-        .right-about{
-            grid-template-columns: 1fr;
-            padding-top: 2.5rem;
-        }
-
-        .left-about{
-            padding-right: 0;
-
-            p{
-                padding-left: 0;
-            }
-        }
-    }
-
-    .timeline{
-        grid-template-columns: 1fr;
-        padding-bottom: 6rem;
-    }
-
-    .projects{
-        grid-template-columns: 1fr;
-        padding-bottom: 6rem;
-    }
-
-    .section{
-        padding: 2rem 2rem;
-    }
-
-    .main-title{
-        h2{
-            font-size: 2rem;
-        }
-    }
-}
-
 @media screen and (max-width: 1432px){
     header{
         padding: 0 !important;
@@ -66,9 +27,8 @@
 
 @media screen and (max-width: 1070px){
     .about-container{
-        grid-template-columns: 1fr;
-
-        .right-about{
+        .bot-about{
+            grid-template-columns: repeat(3, 1fr);
             padding-top: 2.5rem;
         }
     }
@@ -156,6 +116,49 @@
     .main-title{
         h2{
             font-size: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    .about-container{
+        .bot-about{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .about-container{
+        .bot-about{
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+
+        .top-about{
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .timeline{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .projects{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .section{
+        padding: 2rem 2rem;
+    }
+
+    .main-title{
+        h2{
+            font-size: 2rem;
         }
     }
 }
