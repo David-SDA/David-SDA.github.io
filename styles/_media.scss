@@ -7,6 +7,10 @@
         padding: 7rem 11rem;
     }
 
+    .projects{
+        grid-template-columns: 1fr 1fr;
+    }
+
     .contact-content-con{
         flex-direction: column;
 
@@ -31,10 +35,6 @@
             grid-template-columns: repeat(3, 1fr);
             padding-top: 2.5rem;
         }
-    }
-
-    .projects{
-        grid-template-columns: 1fr 1fr;
     }
 
     .main-title{
@@ -118,6 +118,11 @@
             font-size: 3rem;
         }
     }
+
+    .projects{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -143,11 +148,6 @@
     }
 
     .timeline{
-        grid-template-columns: 1fr;
-        padding-bottom: 6rem;
-    }
-
-    .projects{
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
     }

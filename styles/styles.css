@@ -536,6 +536,9 @@ section {
   .section {
     padding: 7rem 11rem;
   }
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
   .contact-content-con {
     flex-direction: column;
   }
@@ -554,9 +557,6 @@ section {
   .about-container .bot-about {
     grid-template-columns: repeat(3, 1fr);
     padding-top: 2.5rem;
-  }
-  .projects {
-    grid-template-columns: 1fr 1fr;
   }
   .main-title h2 {
     font-size: 4rem;
@@ -621,6 +621,10 @@ section {
   .main-title h2 {
     font-size: 3rem;
   }
+  .projects {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
 }
 @media screen and (max-width: 650px) {
   .about-container .bot-about {
@@ -636,10 +640,6 @@ section {
     padding-left: 0;
   }
   .timeline {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
-  }
-  .projects {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
