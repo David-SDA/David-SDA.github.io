@@ -277,7 +277,10 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="send_mail.php" class="contact-form">
+                        <form action="https://api.web3forms.com/submit" class="contact-form" method="POST">
+                            <!-- input hidden pour l'access key de l'envoi d'email -->
+                            <input type="hidden" name="access_key" value="2eb410bb-8cf9-49df-aba2-cafd2929b475">
+
                             <div class="input-control i-c-2">
                                 <input type="text" name="name" placeholder="Nom" required>
                                 <input type="email" name="email" placeholder="Votre email" required>
