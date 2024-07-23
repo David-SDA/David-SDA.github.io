@@ -485,6 +485,12 @@ section{
 }
 
 // Independant components
+button[type="submit"]{
+    background-color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
 .btn-con{
     display: flex;
     align-self: flex-start;
