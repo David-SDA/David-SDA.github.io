@@ -655,4 +655,18 @@ button[type=submit] {
   .main-title h2 {
     font-size: 2rem;
   }
+}
+@media screen and (max-width: 500px) {
+  .controls .control {
+    margin: 0.6rem 1rem;
+  }
+  .section {
+    padding: 2rem 1rem;
+  }
+  .contact-content-con .left-contact .contact-info .contact-item .icon {
+    grid-template-columns: 30px 1fr;
+  }
+  .contact-content-con .left-contact .contact-info .contact-item p {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
